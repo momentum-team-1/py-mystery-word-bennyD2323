@@ -26,23 +26,27 @@ def format_word():
         
         if char in all_letters:
             word_bank.append(char)
-            working_word_bank.append("_")
+            # working_word_bank.append("_")
     print(obtained_word)
     print(word_bank)
     print(word_bank[2])
     print(working_word_bank)
-    return word_bank
+    return word_bank, working_word_bank
 
 
 def guess_input():
-    a = format_word()
-    
     guess = input("Guess a Letter!")
-    print(guess)
-    for letter in a:
-        if letter == guess:
-            return True 
+    return guess
 
-guess_input()
+# def check_guess():
+#     format_word()
+   
     
 
+def run_game():
+    format_word()
+    guess_count = 0
+    guess_input()
+    print (guess_input)
+
+run_game()

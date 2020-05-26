@@ -110,7 +110,9 @@ def run_game():
     output = []
     guess_loop(word, current_guesses, guess_count,output)            
 
-run_game()
+# run_game()
+if __name__ == "__main__":
+    run_game()
 
 # THIS IS WORKING VALID CODE 
 # def run_game():
